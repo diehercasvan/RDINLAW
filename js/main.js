@@ -365,6 +365,7 @@ $('.back-to-top').click(function () {
 
 //Validate information
 function sendData(idform) {
+
   if (validatorForm(idform)) {
     if (validateCaptcha) {
       let objForm = document.getElementById(idform);

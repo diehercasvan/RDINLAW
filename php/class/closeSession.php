@@ -3,5 +3,5 @@
 session_start();
 session_unset();
 session_destroy();
-header("Location:../../pages/login/login.php"); 
+header("Location:../../pages/auth/"); 
  ?>   

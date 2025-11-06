@@ -1,8 +1,9 @@
 // Author: LAURA GRISALES
 // Date: 14/09/2020
-// Description : Global variables to configure the ajax conection
-var ajaxUserLogin = "https://rdl.dendrite.com.co/php/bo/bo_user.php";
-var ajaxProcess = "https://rdl.dendrite.com.co/php/bo/bo_process.php";
-var ajaxRequest = "https://rdl.dendrite.com.co/php/bo/bo_request.php";
-var ajaxCalendar = "https://rdl.dendrite.com.co/php/bo/bo_event.php";
-var company = 1;
+// Description : Global constiables to configure the ajax conection
+const ajaxUserLogin = "https://rdl.dendrite.com.co/php/bo/bo_user.php";
+const ajaxProcess = "http://localhost/projects/Dendrite_Processes/App/php/bo/bo_process.php";
+const ajaxRequest = "http://localhost/projects/Dendrite_Processes/App/php/bo/bo_request.php";
+
+const ajaxCalendar = "https://rdl.dendrite.com.co/php/bo/bo_event.php";
+const company = 1;

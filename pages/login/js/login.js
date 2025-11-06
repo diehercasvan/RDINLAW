@@ -62,6 +62,7 @@
 //Description : funtions data Login
 //************GET DATA FORM**************//
 function sendData(idForm) {
+ alert();
     let objForm = document.getElementById(idForm);
     let jSon = "";
     //loadPageView();
@@ -75,8 +76,10 @@ function sendData(idForm) {
 }
 //************GET DATA SERVER**************//
 function setLogin(dataSetUser) {
+  
   try {
       dataSetUser = '{"POST":"LOGIN",' + dataSetUser + "}";
+      debugger;
       var xhttp = new XMLHttpRequest();
       xhttp.open("POST", ajaxUserLogin, true);
       xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
@@ -86,11 +89,12 @@ function setLogin(dataSetUser) {
               //console.log(jsonObj);
               if (jsonObj[0]["User_id"] != undefined) {
                   createModalAlert("Bienvenido", 1, 6000);
+                  
                   let storage = new StoragePage();
                   storage.setData(jsonObj);
                   storage.loginStorage(jsonObj);
                   //storage.getStorage();
-                  //locationPage("../home/home.php",1000);
+                  locationPage("../dashboard",1000);
               } else {
                   createModalAlert("Valide la información", 3, 4000);
               }
