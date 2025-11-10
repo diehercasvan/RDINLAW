@@ -68,8 +68,6 @@ const dataSetReport = {
   }).then(response => response.json())
     .then(data => {
       console.log('Success:', data);
-     
-
     }).catch((error) => {
       console.error('Error:', error);
       alertManager.showError("Error en la conexión", 4000, dismissible = true);
@@ -90,7 +88,7 @@ function getDataProcess() {
     body: JSON.stringify(dataSetUser)
   }).then(response => response.json())
     .then(data => {
-      console.log('Success:', data);
+      //console.log('Success:', data);
       createTable(data);
       fadeIn("table-container", 500, () => {
         LoadingScreen.hide();
