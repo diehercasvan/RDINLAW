@@ -112,8 +112,7 @@ document.getElementById('sendResetLink').addEventListener('click', function () {
 function checkLogin(dataSetUser) {
 
     dataSetUser.POST = "LOGIN";
-    console.log(typeof dataSetUser);
-
+   // console.log(typeof dataSetUser);
     fetch(ajaxUserLogin, {
         method: 'POST',
         headers: {
